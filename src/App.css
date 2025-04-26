@@ -1,0 +1,45 @@
+/* Custom styles for Georgia Travel website */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero section styles */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(233, 30, 99, 0.3), rgba(194, 24, 91, 0.7));
+  z-index: 1;
+}
+
+/* Animation for featured tours */
+.tour-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
